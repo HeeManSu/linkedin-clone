@@ -22,7 +22,7 @@ const Feed = () => {
 
     useEffect(() => {
         db.collection('posts').orderBy('timestamp', 'desc')
-            .onSnapshot((snapshot) =>
+        .onSnapshot((snapshot) =>
                 setPosts(
                     snapshot.docs.map((doc) => ({
                         id: doc.id,
@@ -34,14 +34,15 @@ const Feed = () => {
 
     const sendPost = (e) => {
         e.preventDefault();
+
         db.collection('posts').add({
-            name: user.displayName,
-            description: user.email,
+            name: 'Himanshu Sharma',
+            description: 'this is a test',
             message: input,
-            photoUrl: user.photoUrl,
+            photoUrl: "",
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         })
-
+        
         setInput('');
     };
 

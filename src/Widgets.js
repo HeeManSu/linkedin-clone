@@ -5,18 +5,7 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const Widgets = () => {
 
-    const newsArticle = (heading, subtitle) => {
-        <div className="widgets__article">
-            <div className="widgets__articleLeft">
-                <FiberManualRecordIcon />
-            </div>
 
-            <div className="widgets__articleRight">
-                <h4>{heading}</h4>
-                <p>{subtitle}</p>
-            </div>
-        </div>
-    }
 
     return (
         <div className='widgets'>
@@ -24,7 +13,7 @@ const Widgets = () => {
                 <h2>LinkedIn News</h2>
                 <InfoRoundedIcon />
             </div>
-            {newsArticle('PAPA React is back', 'Top news - 9099 readers')}
+           
         </div>
     )
 }
