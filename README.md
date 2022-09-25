@@ -1,9 +1,11 @@
-This is the Linkedin Clone.
+Built Using- 
 
-Built Using
+[React](https://reactjs.org/) 
 
-React
-Material UI
-Firebase
 
-Screenshots
+[Redux Toolkit](https://redux-toolkit.js.org/)
+
+[Material UI](https://mui.com/material-ui/)
+
+[Firebase](https://firebase.google.com/)
+
